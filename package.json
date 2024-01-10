@@ -39,6 +39,12 @@
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-customizable"
