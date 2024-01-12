@@ -6,6 +6,10 @@ const publicRoutes = [
     path: '/login',
     component: () => import('@/views/login/index')
     // 按需加载
+  },
+  {
+    path: '/',
+    component: () => import('@/layout/index')
   }
 ]
 
